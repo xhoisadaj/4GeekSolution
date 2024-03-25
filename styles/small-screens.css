@@ -1,0 +1,53 @@
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    padding: 5% 3%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .jumbotron .first-section {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .jumbotron picture img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .random-info .container {
+    flex-wrap: wrap;
+  }
+
+  .random-info .container div {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .quote {
+    padding: 50px 4px;
+    font-size: 15px;
+  }
+
+  .quote div {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-y: auto;
+    padding: 10px;
+  }
+
+  .call-to-action {
+    flex-direction: column;
+    gap: 20px;
+    width: 200px
+  }
+
+  .call-to-action aside {
+    text-align: center;
+  }
+
+  .call-to-action .button-link {
+    margin-top: 20px;
+  }
+}

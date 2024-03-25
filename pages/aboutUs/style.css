@@ -1,0 +1,347 @@
+/* About Us CSS */
+:root {
+    --darkBlueColor: #1f2937;
+    --mainTextColor: #f9faf8;
+    --secundaryTextColor: #e5e7eb;
+    --btnColor: #3882f6;
+    --quoteBgColor: #e5e7eb;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-LightItalic.ttf) format('truetype');
+    font-style: italic;
+    font-weight: light;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+    font-style: normal;
+  }
+  
+  * {
+      font-family: 'Roboto', sans-serif;
+      color: var(--darkBlueColor);   
+  }
+  
+  body {
+      margin: 0;
+      padding: 0;
+  }
+
+
+/* About Us */
+
+
+.aboutUs {
+  height: 350px;
+  padding: max(5vw, 20px);
+  display: flex;
+  background-image: url(../../assets/images/teamDesk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*  margin-bottom: 50px; */
+}
+
+.aboutUsContainer {
+  background-color: #e5e7eb32;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  width: 45vw;
+  min-width: 300px;
+  margin-top:90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about4GS {
+  color: var(--secundaryTextColor);
+}
+
+.slogan {
+  margin-bottom: 20px;
+  color: var(--mainTextColor);
+}
+.aboutUsText {
+  color: var(--secundaryTextColor);
+}
+
+@media screen and (max-width:800px){
+    .aboutUsContainer {
+        padding: 50px;
+    }
+
+    .slogan {
+        margin-bottom: 0px;
+        color: var(--mainTextColor);
+    }
+    .aboutUs {
+        align-items: center;
+        justify-content: center;
+        min-width: 0px;
+    }
+    .aboutUs {
+        height: 500px;
+        padding: max(5vw, 20px);
+        display: flex;
+        background-image: url(../../assets/images/teamDesk.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*  margin-bottom: 50px; */
+      }
+}
+
+/* Why Us */
+
+.computerSticker {
+  width: 300px;
+}
+
+.whyUs {
+  padding: max(5vw, 20px);
+  display: flex;
+}
+
+.whyUsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.whyUsContainer p {
+  margin-top: 50px;
+  width: 70vw;
+  line-height: 40px;
+  width: 90%;
+  font-size: 24px;
+
+}
+
+.whyUsContainer span {
+  font-weight: bold;
+}
+
+@media screen and (max-width:800px){
+    .whyUs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .whyUsContainer p {
+        width: 90%;
+        font-size: 18px;
+        text-align: center;
+    }
+    .whyUsContainer {
+
+        align-items: center;
+    }
+}
+
+/* */
+
+.values {
+  padding: max(5vw, 20px);
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.valuesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 50px 20px 50px;
+  flex-wrap: wrap;
+}
+
+.iconAndText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: light;
+}
+
+.iconAndText p {
+  margin-top: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.values img {
+  width: 160px;
+  margin: 10px;
+  margin-bottom: 25px;
+  transition: 0.3s ease-in;
+}
+
+.values img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width:800px){
+    .iconAndText {
+       margin-bottom: 20px;
+    }   
+    .iconAndText p {
+        margin-top: 0px;
+    }
+    .values img {
+        margin-bottom: 0px;
+    }
+}
+
+
+.sectionTitle {
+  font-size: 36px;
+  font-weight: lighter;
+  letter-spacing: 4px;
+}
+
+/* Team */
+
+.team {
+  padding: max(5vw, 20px);
+}
+
+.teamContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.person {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--quoteBgColor);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0rem 0.125rem 0.5rem 0rem var(--darkBlueColor);
+  overflow: hidden;
+}
+
+.bannerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 130px;
+  width: 100%;
+  background-image: url(../../assets/images/personCardBg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.person img {
+  width: 200px;
+  border-radius: 50%;
+  border: var(--darkBlueColor) 7px solid;
+  clip-path: circle(200px at center);
+}
+
+.person p {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+
+@media screen and (max-width:1200px){
+    .teamContainer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }   
+}
+
+/*  */
+
+.contacts {
+  background-color: var(--quoteBgColor);
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(229, 231, 235, 1) 100%
+  );
+  padding: max(5vw, 20px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contacts h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.contacts p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: var(--btnColor);
+  border: transparent;
+  font-size: 18px;
+  padding: 10px 50px;
+  border-radius: 10px;
+  margin: 30px 0;
+  color: var(--mainTextColor);
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--mainTextColor);
+  color: var(--btnColor);
+  border: #3882f6 solid 1.5px;
+}
+
+.contactSticker {
+  width: 250px;
+}
+
+.contactsContent {
+   
+  align-self: center;
+  justify-self: center;
+}
+
+@media screen and (max-width:800px){
+    .contactSticker {
+        width: 150px;
+        /*  margin-right: 100px; */
+    }
+    .contacts {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .contactsContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:1000px){
+    .contactSticker {
+       margin-right: 30px;
+
+    }
+}

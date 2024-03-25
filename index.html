@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/header-footer.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/medium-screens.css" />
+    <link rel="stylesheet" href="./styles/small-screens.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="icon" href="./assets/images/4geekLogoBlack.png" />
+    <title>CSS Assignment</title>
+  </head>
+
+  <body>
+    <header>
+      <picture>
+        <a href="./index.html">
+          <img class="logo" src="./assets/images/4geekLogoWhite.png" alt="logo"/>
+        </a>
+      </picture>
+      
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/services/services.html">Services</a></li>
+          <li><a href="./pages/aboutUs/index.html">About Us</a></li>
+          <li><a href="./pages/contact-faq/index.html">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+
+    <main>
+        <section class="jumbotron">
+            <aside class="first-section">
+                <h1>
+                    Websites made awesomely!
+                </h1>
+                <p>
+                    Need a website or other applications built? You've come to the right place!
+                </p>
+                <a class="button-link" href="./pages/services/services.html">
+                    Find out more!
+                </a>
+              </aside>
+            <picture>
+                <img src="./assets/images/website-template-design.jpg" width="400" height="220" alt="website template design">
+            </picture>
+        </section>
+
+        <section class="random-info">
+            <h4>
+                Services offered
+            </h4>
+            <div class="container">
+                <figure>
+                    <img src="./assets/images/web-creation1.jpg" width="150" height="150" alt="Placeholder image">
+                    <figcaption>
+                      <p>this is some subtext under an illustration or image</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/images/web-creation2.jpg" width="150" height="150" alt="Placeholder image">
+                    <figcaption>
+                      <p>this is some subtext under an illustration or image</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/images/web-creation3.jpg" width="150" height="150" alt="Placeholder image">
+                    <figcaption>
+                      <p>this is some subtext under an illustration or image</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/images/technologies-used.jpg" width="150" height="150" alt="Placeholder image">
+                    <figcaption>
+                      <p>this is some subtext under an illustration or image</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+      <section class="quote">
+        <blockquote>
+          <p>
+            4Geek Solution earns high marks for its exceptional design quality,
+            user experience, customer service, and overall performance in the
+            realm of website development. As a trusted provider in the industry,
+            they continue to help clients achieve their online goals with
+            professionalism, creativity, and technical expertise.
+          </p>
+          <p class="quote-author">-Thor</p>
+        </blockquote>
+      </section>
+
+      <section class="call-to-action">
+        <aside>
+          <h6>Need more information?</h6>
+          <p>Contact us here.</p>
+        </aside>
+
+        <a class="button-link" href="./pages/contact-faq/index.html">
+          Contact us
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright © 2024 4GEEK Solution</p>
+    </footer>
+  </body>
+</html>
